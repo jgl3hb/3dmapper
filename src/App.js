@@ -8,7 +8,7 @@ const containerStyle = {
 
 const googleMapsApiKey = process.env.REACT_APP_GOOGLE_API_KEY;
 
-const columbiaMO = { lat: 38.9517, lng: -92.3341 }; // Coordinates of Columbia, MO
+const columbiaMO = { lat: 38.942257, lng: -92.328942 }
 
 function App() {
   const [showStreetView, setShowStreetView] = useState(false);
@@ -22,7 +22,7 @@ function App() {
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={columbiaMO}
-        zoom={14}
+        zoom={16}
       >
         {showStreetView && (
           <StreetViewPanorama
